@@ -1,0 +1,35 @@
+{
+  "computadores":[{
+      "id":1,
+      "Nome": "Morgana",
+      "usuario": "apf01",
+      "setor":"apf",
+      "nomePc":"cms227",
+      "IP": "192.168.100.",
+      "AnyDesk":"00000",
+      "Processador": "i3",
+      "RAM":"4GB",
+      "Armazenamento":"Null",
+      "Dhcp Ou Fixo": "Fixo",
+      "Domínio":"CENTROMS.LOCAL",
+      "SO":"Windows 10 Pro 64bits"
+
+
+
+
+  },
+{ "id":2,
+  "Nome": "Angelita",
+  "usuario": "angelita",
+  "setor":"Adm",
+  "nomePc":"TURMALINA",
+  "IP": "192.168.100.",
+  "AnyDesk":"00000",
+  "Processador": "i5",
+  "RAM":"4GB",
+  "Armazenamento":"Null",
+  "Dhcp Ou Fixo": "Fixo",
+  "Domínio":"CMS2003.LOCAL",
+  "SO":"Windows 10 Pro 64bits"}
+]
+}
