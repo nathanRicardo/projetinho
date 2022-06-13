@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Main from "../template/main";
 
 const headerProps = {
-icon: 'computadores',
+icon: 'keyboard',
 title: 'Computadores',
 subtitle: 'Controle de Máquinas Ativas'
 

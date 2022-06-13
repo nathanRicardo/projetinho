@@ -8,12 +8,16 @@ aside.menu-area{
 .menu a{
     display: block;
     text-decoration: none;
-    color: white;
-    padding: 15px;
-    font-weight: 300;
+    color: rgb(255, 253, 253);
+    padding: 35px;
+    font-weight: 550;
     text-align: center;
+    letter-spacing: 1.5px;
+    
+ 
 }
 .menu a:hover{
     background: linear-gradient(135deg, #941b1b 0%, #ee2727 100%);
     
 }
+

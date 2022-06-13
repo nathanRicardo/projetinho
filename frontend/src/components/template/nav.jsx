@@ -6,29 +6,29 @@ export default props =>
     <nav className='menu'>
       <a href="#/ ">
 <i className='fa fa-home'></i>
-<hr/>
-Início
-<hr/>
+
+<p>Início</p>
+
       </a>
       
       <a href='#/computadores'>
           <i className="fa fa-keyboard-o"></i>
-          <hr/>
-          Computadores
-          <hr/>
+         
+          <p>Computadores</p>
+          
       </a>
       <a href='#/impressoras'>
         
           <i className="fa fa-print"></i>
-          <hr/>
-          Impressoras
-          <hr/>
+          
+          <p>Impressoras</p>
+        
       </a>
       <a href='#/monitores'>
           <i className="fa fa-desktop"></i>
-          <hr/>
-          Monitores
-          <hr/>
+        
+         <p> Monitores</p>
+          
       </a>
     </nav>
 </aside>
