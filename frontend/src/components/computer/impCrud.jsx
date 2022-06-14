@@ -3,8 +3,8 @@ import Main from "../template/main";
 
 const headerProps = {
 icon: 'fa fa-desktop',
-title: 'Computadores',
-subtitle: 'Controle de Máquinas Ativas'
+title: 'Impressoras',
+subtitle: 'Controle de Impressoras'
 
 }
 
@@ -12,7 +12,7 @@ export default class cpCrud extends Component {
     render(){
         return(
             <Main {...headerProps}>
-Cadastro de PC
+Cadastro de Impressora
             </Main>)
     }
 }

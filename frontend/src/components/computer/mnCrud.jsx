@@ -3,16 +3,16 @@ import Main from "../template/main";
 
 const headerProps = {
 icon: 'fa fa-desktop',
-title: 'Computadores',
-subtitle: 'Controle de Máquinas Ativas'
+title: 'Monitores',
+subtitle: 'Controle de Monitores'
 
 }
 
-export default class cpCrud extends Component {
+export default class mnCrud extends Component {
     render(){
         return(
             <Main {...headerProps}>
-Cadastro de PC
+Cadastro de Monitor
             </Main>)
     }
 }
