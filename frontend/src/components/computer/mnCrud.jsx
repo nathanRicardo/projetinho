@@ -13,6 +13,7 @@ export default class mnCrud extends Component {
         return(
             <Main {...headerProps}>
 Cadastro de Monitor
+
             </Main>)
     }
 }

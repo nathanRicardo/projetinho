@@ -1,6 +1,6 @@
 {
   "computadores":[{
-      "id":1,
+     
       "Nome": "Morgana",
       "usuario": "apf01",
       "setor":"apf",
@@ -18,7 +18,7 @@
 
 
   },
-{ "id":2,
+{ 
   "Nome": "Angelita",
   "usuario": "angelita",
   "setor":"Adm",
