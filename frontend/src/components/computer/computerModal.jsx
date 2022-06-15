@@ -1,7 +1,7 @@
 import React from "react";
+import cpCrud from "./cpCrud";
 
-
-export default class compuaterModal extends Component {
+export default class computerModal extends Component {
 
 renderForm(){
     return(

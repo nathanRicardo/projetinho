@@ -1,6 +1,6 @@
 aside.menu-area{
     background-color: var(--dark);
-    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.12),
+    box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.12),
     2px 0 15px 0 rgba(0, 0, 0, 0.09)
     ;
 }
@@ -8,11 +8,11 @@ aside.menu-area{
 .menu a{
     display: block;
     text-decoration: none;
-    color: rgb(255, 253, 253);
+    color: rgb(204, 204, 204);
     padding: 35px;
-    font-weight: 550;
+    font-weight: 500;
     text-align: center;
-    letter-spacing: 1.5px;
+    
     
  
 }
