@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Main from "../template/main";
 
 const headerProps = {
-icon: 'fa fa-desktop',
+icon: 'desktop',
 title: 'Monitores',
 subtitle: 'Controle de Monitores'
 

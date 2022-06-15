@@ -1,6 +1,7 @@
 {
   "computadores": [
     {
+      "ID": 1,
       "Nome": "Morgana",
       "usuario": "apf01",
       "setor": "apf",
@@ -15,6 +16,7 @@
       "SO": "Windows 10 Pro 64bits"
     },
     {
+      "ID": 2,
       "Nome": "Angelita",
       "usuario": "angelita",
       "setor": "Adm",
@@ -24,11 +26,11 @@
       "Processador": "i5",
       "RAM": "4GB",
       "Armazenamento": "Null",
-      "Dhcp Ou Fixo": "Fixo",
       "Domínio": "CMS2003.LOCAL",
       "SO": "Windows 10 Pro 64bits"
     },
     {
+      "ID": 3,
       "Nome": "Sandra",
       "usuario": "recmt01",
       "setor": "PCMSO",
@@ -38,11 +40,11 @@
       "Processador": "i3",
       "RAM": "4GB",
       "Armazenamento": "00",
-      "Dhcp Ou Fixo": "Fixo",
       "Domínio": "CENTROMS.LOCAL",
       "SO": "Windows 10 Pro 64bits"
     },
     {
+      "ID": 4,
       "Nome": "Marisete",
       "usuario": "mt01",
       "setor": "PCMSO",
@@ -52,9 +54,19 @@
       "Processador": "i3",
       "RAM": "4GB",
       "Armazenamento": "Null",
-      "Dhcp Ou Fixo": "Fixo",
       "Domínio": "CENTROMS.LOCAL",
       "SO": "Windows 10 Pro 64bits"
+    }
+  ],
+  "impressoras": [
+    {
+      "ID": 1,
+      "Nome": "Anelise",
+      "Setor": "DP",
+      "Trafo": "-",
+      "IP": "192.168.100.118",
+      "Modelo": "HP Laserjet Pro m1212nf mp",
+      "Quem usa": "Anelise"
     }
   ]
 }

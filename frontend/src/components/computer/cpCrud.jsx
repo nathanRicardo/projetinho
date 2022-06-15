@@ -3,7 +3,7 @@ import Main from "../template/main";
 import axios from 'axios';
 import 'font-awesome/css/font-awesome.min.css';
 const headerProps = {
-icon: 'fa fa-computer',
+icon: 'keyboard-o',
 title: 'Computadores',
 subtitle: 'Controle de Máquinas Ativas'
 
@@ -177,17 +177,7 @@ renderForm(){
                 </div>
                 
             </div>
-            <div className="col-12 col-md-3">
-                <div className="form-group">
-                    <label>Dhcp ou Fixo</label>
-                    <input type="text" className="form-control"
-                        name="dhcpoufixo"
-                        value={this.state.computadores.DhcpouFixo}
-                        onChange={e => this.updateField(e)}
-                        placeholder="Digite se o Ip é DHCP ou Fixado..." />
-                </div>
-                
-            </div>
+           
             <div className="col-12 col-md-3">
                 <div className="form-group">
                     <label>Domínio</label>
@@ -247,7 +237,6 @@ renderTable() {
                     <th>Processador</th>
                     <th>RAM</th>
                     <th>Armazenamento</th>
-                    <th>DHCP Ou Fixo</th>
                     <th>Domínio</th>
                     <th>SO</th>
                     
@@ -274,7 +263,7 @@ renderRows() {
                 <td>{computadores.Processador}</td>
                 <td>{computadores.RAM}</td>
                 <td>{computadores.Armazenamento}</td>
-                <td>{computadores.DhcpouFixo}</td>
+                
                 <td>{computadores.Domínio}</td>
                 <td>{computadores.SO}</td>
                 <td>
