@@ -11,7 +11,7 @@ subtitle: 'Controle de Impressoras'
 const baseUrl = 'http://localhost:3001/impressoras'
 const initialState = {
     impressoras: {
-    ID:'',
+    id:'',
       Nome: '',
      Setor:'',
      Trafo:'',
@@ -36,8 +36,8 @@ export default class impCrud extends Component {
 
     save() {
         const impressoras = this.state.impressoras
-        const method = impressoras.ID ? 'put' : 'post'
-        const url = impressoras.ID ? `${baseUrl}/${impressoras.ID}` : baseUrl
+        const method = impressoras.id ? 'put' : 'post'
+        const url = impressoras.id ? `${baseUrl}/${impressoras.id}` : baseUrl
         axios[method](url, impressoras)
             .then(resp => {
                 const list = this.getUpdatedList(resp.data)
@@ -46,7 +46,7 @@ export default class impCrud extends Component {
     }
 
     getUpdatedList(impressoras, add = true) {
-        const list = this.state.list.filter(i => i.ID !== impressoras.ID)
+        const list = this.state.list.filter(i => i.id !== impressoras.id)
         if(add) list.unshift(impressoras)
         return list
     }
@@ -56,7 +56,15 @@ export default class impCrud extends Component {
         impressoras[event.target.name] = event.target.value
         this.setState({ impressoras })
     }
-
+    renderButton(){
+        return(
+            <button className="fa fa-plus" aria-hidden="true"
+            onClick={e => this.renderForm(this.renderForm())}>
+            
+    
+        </button>
+        )
+    }
     renderForm() {
         return (
             <div className="form">
@@ -142,13 +150,13 @@ export default class impCrud extends Component {
         )
     }
 
-    load(impressora) {
-        this.setState({ impressora })
+    load(impressoras) {
+        this.setState({ impressoras })
     }
 
-    remove(impressora) {
-        axios.delete(`${baseUrl}/${impressora.ID}`).then(resp => {
-            const list = this.getUpdatedList(impressora, false)
+    remove(impressoras) {
+        axios.delete(`${baseUrl}/${impressoras.id}`).then(resp => {
+            const list = this.getUpdatedList(impressoras, false)
             this.setState({ list })
         })
     }
@@ -177,7 +185,7 @@ export default class impCrud extends Component {
     renderRows() {
         return this.state.list.map(impressoras => {
             return (
-                <tr key={impressoras.ID}>
+                <tr key={impressoras.id}>
                     <td>{impressoras.Nome}</td>
                     <td>{impressoras.Setor}</td>
                     <td>{impressoras.Trafo}</td>
@@ -202,8 +210,9 @@ export default class impCrud extends Component {
     render(){
         return(
             <Main {...headerProps}>
+                {this.renderButton(this.renderForm())}
  {this.renderTable()}
-{this.renderForm()}
+
             </Main>)
     }
 }

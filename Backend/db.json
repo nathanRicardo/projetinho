@@ -1,7 +1,7 @@
 {
   "computadores": [
     {
-      "ID": 1,
+      "id": "1",
       "Nome": "Morgana",
       "usuario": "apf01",
       "setor": "apf",
@@ -16,7 +16,7 @@
       "SO": "Windows 10 Pro 64bits"
     },
     {
-      "ID": 2,
+      "id": "2",
       "Nome": "Angelita",
       "usuario": "angelita",
       "setor": "Adm",
@@ -30,7 +30,7 @@
       "SO": "Windows 10 Pro 64bits"
     },
     {
-      "ID": 3,
+      "id": "3",
       "Nome": "Sandra",
       "usuario": "recmt01",
       "setor": "PCMSO",
@@ -44,7 +44,7 @@
       "SO": "Windows 10 Pro 64bits"
     },
     {
-      "ID": 4,
+      "id": "4",
       "Nome": "Marisete",
       "usuario": "mt01",
       "setor": "PCMSO",
@@ -60,7 +60,7 @@
   ],
   "impressoras": [
     {
-      "ID": 1,
+      "id": "1",
       "Nome": "Anelise",
       "Setor": "DP",
       "Trafo": "-",

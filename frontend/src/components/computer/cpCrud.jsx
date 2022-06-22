@@ -12,7 +12,7 @@ subtitle: 'Controle de Máquinas Ativas'
 const baseUrl = 'http://localhost:3001/computadores'
 const initialState = {
     computadores: {
-    
+    id:'',
       Nome: '',
       usuario: '',
       setor:'',
@@ -72,6 +72,16 @@ remove(computadores) {
         this.setState({ list })
     })
 }
+renderButton(){
+    return(
+        <button className="fa fa-plus"aria-hidden="true"
+    >
+        
+
+    </button>
+    )
+}
+
 renderForm(){
     return(
 
@@ -193,7 +203,7 @@ renderForm(){
                 <div className="form-group">
                     <label>Sistema Operacional</label>
                     <input type="text" className="form-control"
-                        name="dhcpoufixo"
+                        name="SO"
                         value={this.state.computadores.SO}
                         onChange={e => this.updateField(e)}
                         placeholder="Digite o SO da Máquina..." />
@@ -253,7 +263,7 @@ renderRows() {
     return this.state.list.map(computadores => {
         return (
             
-            <tr key={computadores.getUpdatedList}>
+            <tr key={computadores.id}>
                 <td>{computadores.Nome}</td>
                 <td>{computadores.usuario}</td>
                 <td>{computadores.setor}</td>
@@ -291,8 +301,9 @@ renderRows() {
     render(){
         return(
             <Main {...headerProps}>
-                
+                {this.renderButton()}
                 {this.renderTable()}
+               
             </Main>)
     }
 }
